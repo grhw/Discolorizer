@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #313338;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discolorizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Discord Codeblock Colorizer</h1>
+    <div class="buttons">
+        <div class="formatting">
+            <button id="bold">Bold</button>
+            <button id="italic">Italic</button>
+            <button id="underline">Underline</button>
+        </div>
+        <div class="colors">
+        </div>
+        <div class="misc">
+            <button id="reset">Reset All Formatting</button>
+        </div>
+    </div>
+
+    <div id="editor">
+        <p><i>Type your</i></p>
+        <p>colorized text here!</p>
+        <p>made by <b>@guhw</b></p>
+    </div>
+
+    <h2>Output (paste to discord)</h2>
+
+    <span class="output-container">
+        <span class="triple-backtick">```</span>
+        <div id="output"></div>
+        <span class="triple-backtick">```</span>
+    </span>
+    
+    <h2>How to use</h2>
+    <p>Select text, click a color, and then click set Foreground or Background.</p>
+    <h2>Why isn't my bold/underline/italics working?</h2>
+    <p>For some reason, (sometimes) they don't work.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

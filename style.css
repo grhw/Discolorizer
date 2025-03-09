@@ -1,0 +1,97 @@
+
+html {
+    background-color: #313338;
+}
+:root, button {
+    color: #DBDEE1;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+#editor {
+    font-size: inherit;
+    font-family: monospace;
+    background-color: #2B2D31;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #1E1F22;
+    border-style: solid;
+}
+
+.output-container {
+    background-color: #292B2F;
+    padding: 15px;
+    margin-top: 15px;
+
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #292B2F;
+    border-style: solid;
+    display: block;
+
+    transition: 0.1s border-color;
+}
+.output-container:hover {
+    border-color: #5865F2;
+}
+
+.triple-backtick {
+    color: #949BA4;
+}
+
+/*
+and yes, im aware that there is 2 :roots.
+*/
+
+:root {
+    --color-hue-accent: 235;
+    --color-hue-danger: 0;
+
+    --color-sat: 86%;
+    --color-lgt: 65%;
+
+    --color-sat-hover: 51%;
+    --color-lgt-hover: 52%;
+
+    --color-sat-down: 47%;
+    --color-lgt-down: 44%;
+}
+
+button {
+    --button-hue: var(--color-hue-accent);
+    background-color: hsl(var(--button-hue), var(--color-sat), var(--color-lgt));
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 1px;
+    transition: 0.1s background-color;
+}
+
+#reset {
+    --button-hue: var(--color-hue-danger);
+}
+
+.colors * {
+    aspect-ratio: 1;
+    padding: 10px;
+}
+
+.color {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: hsl(var(--button-hue), var(--color-sat-hover), var(--color-lgt-hover));
+}
+
+button:active {
+    background-color: hsl(var(--button-hue), var(--color-sat-down), var(--color-lgt-down));
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
